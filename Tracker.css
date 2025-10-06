@@ -1,0 +1,152 @@
+body
+{
+   font-family: "Comfortaa", sans-serif;
+}
+.header
+{
+    background: #476EF7;
+    color: white;
+    padding-left: 25px;
+    font-size: large;
+}
+.input-form
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #476EF7;
+    margin-top: 15px;
+    padding: 25px 0px;
+}
+
+#add-button
+{
+    background: #476EF7;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: x-large;
+    font-weight: 600;
+    color: white;
+    
+}
+.inputs
+{
+    width: 30%;
+}
+.cards
+{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+}
+.card
+{
+    background: #476EF7;
+    border: 0px;
+    height: 150px;
+    width: 18rem;
+}
+.card-body
+{
+    color: white;
+}
+.transaction-table
+{
+border: 1px black solid;
+width: 95%;
+margin: auto;
+border-radius: 8px ;
+overflow: hidden;
+font-weight: 900;
+box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+padding: 0px;
+
+}
+
+#header-row
+{
+    background: #476EF7;
+}
+#header-row th
+{
+    padding: 15px 0px;
+    color: white;
+}
+.delete-button, .delete-button:hover
+{
+    background: red;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 768px){
+     .header
+     {
+        background: black;
+     }
+.input-form {
+    display: flex;
+    flex-direction: column;   
+    align-items: center; 
+    gap: 15px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.inputs
+{
+    width: 75%;
+}
+#add-button
+{
+    background:black;
+    width: 75px;
+    border-radius: 8px;
+}
+.cards
+{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px
+}
+.card {
+    background: black;
+    border: 0;
+    height: 150px;
+    width: 100%;        
+    max-width: 150px;   
+    margin: 5px auto;  
+}
+
+#header-row
+{
+    background:black;
+}
+.transaction-table {
+    border: 1px solid black;
+    width: 95%;
+    margin: auto;
+    border-radius: 8px;
+    overflow-x: auto;        /* enables scroll on small screens */
+    font-weight: 900;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+    padding: 0;
+    border-collapse: collapse;
+    font-size: clamp(11px, 2vw, 16px);  /* auto scales font size */
+}
+
+.transaction-table th,
+.transaction-table td {
+    padding: 8px;
+    text-align: center;
+}
+
+}
